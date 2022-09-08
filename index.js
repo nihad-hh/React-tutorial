@@ -44,12 +44,13 @@ function List(){
     </ul>
     )
 } 
-
-ReactDOM.render(
-    <div>
-        <Image />
-        <Title />
-        <List />
-    </div>,
-    document.getElementById("root")
+function Page(){
+    return (
+        <div>
+            <Image />
+            <Title />
+            <List />
+        </div>
     )
+}
+ReactDOM.render(<Page />, document.getElementById("root"))
